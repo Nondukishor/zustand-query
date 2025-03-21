@@ -1,6 +1,6 @@
 ⚡ Performance & Feature Comparison
 
-| Feature                   | zustand-query (Your Package)        | react-query                             |
+| Feature                   | ZStoreQ        | react-query                             |
 | ------------------------- | ----------------------------------- | --------------------------------------- |
 | 🔄 State management       | Zustand (global, reactive store)    | Internal React context + caching        |
 | 🧠 Data cache             | In-memory with manual invalidation  | In-memory, automated, smart GC          |
@@ -24,7 +24,7 @@
 
 ```typescript
 import React from "react";
-import { useQueryZustand } from "zustand-query";
+import { useQueryZustand } from "zstoreq";
 
 function fetchUser() {
   return fetch("/api/user").then((res) => res.json());
@@ -57,7 +57,7 @@ function UserComponent() {
 
 ```typescript
 import React from "react";
-import { useMutationZustand } from "zustand-query";
+import { useMutationZustand } from "zstoreq";
 
 function updateUser(data) {
   return fetch("/api/user", {

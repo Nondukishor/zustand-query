@@ -1,5 +1,5 @@
 {
-  "name": "zustand-query",
+  "name": "zstoreq",
   "version": "1.0.0",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -42,9 +42,6 @@
     "react-dom": "^19.0.0",
     "typescript": "^5.8.2",
     "vitest": "^3.0.9"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
   },
   "bugs": {
     "url": "https://github.com/Nondukishor/zustand-query/issues"
