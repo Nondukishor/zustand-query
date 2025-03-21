@@ -1,11 +1,17 @@
 {
-  "name": "zustand-query",
+  "name": "@pronipu/zustand-query",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "private": false,
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsc",
-    "test": "vitest",
-    "publish": "npm publish"
+    "test": "vitest"
   },
   "peerDependencies": {
     "react": "^18.0.0 || ^19.0.0",
@@ -16,12 +22,9 @@
     "query",
     "zustand-query"
   ],
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Nondukishor/zustand-query.git"
+    "url": "git+https://github.com/Nondukishor/zustand-query.git"
   },
   "author": "Nipu Chakraborty",
   "license": "ISC",
@@ -39,5 +42,12 @@
     "react-dom": "^19.0.0",
     "typescript": "^5.8.2",
     "vitest": "^3.0.9"
-  }
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "bugs": {
+    "url": "https://github.com/Nondukishor/zustand-query/issues"
+  },
+  "homepage": "https://github.com/Nondukishor/zustand-query#readme"
 }
