@@ -16,6 +16,9 @@
     "query",
     "zustand-query"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "author": "Nipu Chakraborty",
   "license": "ISC",
   "description": "",
