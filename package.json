@@ -1,5 +1,5 @@
 {
-  "name": "@pronipu/zustand-query",
+  "name": "zustand-query",
   "version": "1.0.0",
   "main": "dist/index.js",
   "module": "dist/index.js",
