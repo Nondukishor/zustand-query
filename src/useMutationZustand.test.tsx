@@ -1,7 +1,6 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
-import React, { useEffect } from "react";
+import { useEffect, act } from "react";
 import { createRoot } from "react-dom/client";
-import { act } from "react-dom/test-utils";
 import { useMutationZustand } from "./useMutationZustand";
 
 // Mock handleError
