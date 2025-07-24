@@ -20,6 +20,28 @@
 
 ## Usage Example
 
+### Validation Utilities (Fixes Zod Record Issue #3197)
+
+The library now includes validation utilities that fix the issue where `z.record(z.any())` filters out `undefined` values. Our implementation preserves `undefined` values in records, matching the behavior of object validation.
+
+```typescript
+import { v } from "zstoreq";
+
+// Object validation preserves undefined values
+const objectResult = v.object({ foo: v.any() }).parse({ foo: undefined });
+console.log(objectResult); // { foo: undefined }
+
+// Record validation now ALSO preserves undefined values (fixing the Zod bug)
+const recordResult = v.record(v.any()).parse({ foo: undefined });
+console.log(recordResult); // { foo: undefined } (not {} like buggy Zod)
+
+// Safe parsing with error handling
+const safeResult = v.record(v.any()).safeParse({ foo: undefined, bar: "test" });
+if (safeResult.success) {
+  console.log(safeResult.data); // { foo: undefined, bar: "test" }
+}
+```
+
 ### useQueryZustand
 
 ```typescript

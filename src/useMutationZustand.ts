@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { handleError } from "./errorHandler";
+import { handleError } from "./errorHandler.js";
 
 type MutationOptions<TData, TVariables> = {
   mutationFn: (variables: TVariables) => Promise<TData>;
