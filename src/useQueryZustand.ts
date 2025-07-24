@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useQueryCacheStore } from "./createQueryCacheStore";
+import { useQueryCacheStore } from "./createQueryCacheStore.js";
 
 export function useQueryZustand<T>(
   key: string,

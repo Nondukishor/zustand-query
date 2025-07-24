@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { handleError } from "./errorHandler";
+import { handleError } from "./errorHandler.js";
 
 type CacheItem<T> = {
   data: T | null;
